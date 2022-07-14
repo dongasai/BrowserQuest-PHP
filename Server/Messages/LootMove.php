@@ -15,6 +15,9 @@ namespace Server\Messages;
 
 use Server\Entity;
 
+/**
+ * 移动攻击
+ */
 class LootMove
 {
     /**

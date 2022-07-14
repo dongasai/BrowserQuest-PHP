@@ -13,6 +13,9 @@
  */
 namespace Server\Messages;
 
+/**
+ * 列表
+ */
 class Lists
 {
     public $ids = null;

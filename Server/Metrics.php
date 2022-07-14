@@ -16,6 +16,9 @@ namespace Server;
 class Metrics
 {
     public $config;
+    /**
+     * @var \Memcached
+     */
     public $client;
     public $isReady;
     public $readyCallback;
@@ -27,7 +30,7 @@ class Metrics
         $this->client = new \Memcached();
         $this->client->addServer($config['memcached_host'], $config['memcached_port']);
         $this->isReady = true;
-        if($this->$readyCallback) 
+        if($this->readyCallback)
         {
             call_user_func($this->readyCallback);
         }

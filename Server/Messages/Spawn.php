@@ -13,6 +13,9 @@
  */
 namespace Server\Messages;
 
+/**
+ * 出生
+ */
 class Spawn
 {
     public $entity = null;

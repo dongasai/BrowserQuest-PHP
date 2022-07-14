@@ -67,8 +67,9 @@ class Map
         $this->zoneHeight = 12;
         $this->groupWidth = floor($this->width / $this->zoneWidth);
         $this->groupHeight = floor($this->height / $this->zoneHeight);
-        
+        //  初始化传送门分组
         $this->initConnectedGroups($map->doors);
+
         $this->initCheckpoints($map->checkpoints);
         
         if($this->readyFunc)
@@ -179,7 +180,13 @@ class Map
             }
         }
     }
-    
+
+    /**
+     * 位置转分组
+     * @param $x
+     * @param $y
+     * @return string
+     */
     public function getGroupIdFromPosition($x ,$y)
     {
         $w = $this->zoneWidth;
@@ -188,7 +195,13 @@ class Map
         $gy = floor(($y - 1) / $h);
         return $gx.'-'.$gy;
     }
-    
+
+    /**
+     * 获取相邻分组
+     * Adjacent Group Positions
+     * @param $id
+     * @return array
+     */
     public function getAdjacentGroupPositions($id)
     {
         $position = $this->GroupIdToGroupPosition($id);
@@ -219,7 +232,13 @@ class Map
             return $pos['x'] < 0 || $pos['y'] < 0 || $pos['x'] >= $self->groupWidth || $pos['y'] >= $self->groupHeight;
         });
     }
-    
+
+    /**
+     * 遍历 相邻分组
+     * @param $group_id
+     * @param $callback
+     * @return void
+     */
     public function forEachAdjacentGroup($group_id, $callback)
     {
         if($group_id) 

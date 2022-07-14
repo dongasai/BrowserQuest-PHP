@@ -13,6 +13,9 @@
  */
 namespace Server\Messages;
 
+/**
+ * 杀死
+ */
 class Kill
 {
     public $mob = null;

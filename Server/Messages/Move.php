@@ -15,6 +15,9 @@ namespace Server\Messages;
 
 use Server\Entity;
 
+/**
+ * 移动
+ */
 class Move
 {
     /**
