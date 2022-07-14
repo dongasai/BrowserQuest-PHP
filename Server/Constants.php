@@ -13,18 +13,31 @@
  */
 
 define('TYPES_MESSAGES_HELLO', 0);
+// 欢迎
 define('TYPES_MESSAGES_WELCOME', 1);
+// 孵化
 define('TYPES_MESSAGES_SPAWN', 2);
+
 define('TYPES_MESSAGES_DESPAWN', 3);
+// 移动
 define('TYPES_MESSAGES_MOVE', 4);
+// 战斗移动
 define('TYPES_MESSAGES_LOOTMOVE', 5);
+// 敌对
 define('TYPES_MESSAGES_AGGRO', 6);
+// 攻击
 define('TYPES_MESSAGES_ATTACK', 7);
+// 命中
 define('TYPES_MESSAGES_HIT', 8);
+// 伤害
 define('TYPES_MESSAGES_HURT', 9);
+// 健康
 define('TYPES_MESSAGES_HEALTH', 10);
+// 聊天
 define('TYPES_MESSAGES_CHAT', 11);
+// 战利品
 define('TYPES_MESSAGES_LOOT', 12);
+// 装备
 define('TYPES_MESSAGES_EQUIP', 13);
 // 下降
 define('TYPES_MESSAGES_DROP', 14);
@@ -44,7 +57,7 @@ define('TYPES_MESSAGES_WHO', 20);
 define('TYPES_MESSAGES_ZONE', 21);
 // 销毁
 define('TYPES_MESSAGES_DESTROY', 22);
-//
+// 血量变化
 define('TYPES_MESSAGES_HP', 23);
 define('TYPES_MESSAGES_BLINK', 24);
 define('TYPES_MESSAGES_OPEN', 25);
