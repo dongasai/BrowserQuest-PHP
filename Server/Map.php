@@ -132,12 +132,24 @@ class Map
             }
         }
     }
-    
+
+    /**
+     * 是否超出边界
+     * @param $x
+     * @param $y
+     * @return bool
+     */
     public function isOutOfBounds($x, $y)
     {
         return $x <= 0 || $x >= $this->width || $y <= 0 || $y >= $this->height;
     }
-    
+
+    /**
+     * 是否碰撞
+     * @param $x
+     * @param $y
+     * @return bool
+     */
     public function isColliding($x, $y)
     {
         if($this->isOutOfBounds($x, $y)) 

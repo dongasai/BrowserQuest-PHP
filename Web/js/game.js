@@ -759,7 +759,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                 // Destroy entities outside of the player's zone group
                 self.removeObsoleteEntities();
                 
-                // Ask the server for spawn information about unknown entities
+                // 向服务器询问关于未知实体的衍生信息
                 if(_.size(newIds) > 0) {
                     self.client.sendWho(newIds);
                 }

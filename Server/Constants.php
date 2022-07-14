@@ -26,20 +26,30 @@ define('TYPES_MESSAGES_HEALTH', 10);
 define('TYPES_MESSAGES_CHAT', 11);
 define('TYPES_MESSAGES_LOOT', 12);
 define('TYPES_MESSAGES_EQUIP', 13);
+// 下降
 define('TYPES_MESSAGES_DROP', 14);
+// 传送
 define('TYPES_MESSAGES_TELEPORT', 15);
+// 损伤
 define('TYPES_MESSAGES_DAMAGE', 16);
+// 人口
 define('TYPES_MESSAGES_POPULATION', 17);
+// 杀死
 define('TYPES_MESSAGES_KILL', 18);
+// 列表
 define('TYPES_MESSAGES_LIST', 19);
+// 消息类型 谁？
 define('TYPES_MESSAGES_WHO', 20);
+// 房间
 define('TYPES_MESSAGES_ZONE', 21);
+// 销毁
 define('TYPES_MESSAGES_DESTROY', 22);
+//
 define('TYPES_MESSAGES_HP', 23);
 define('TYPES_MESSAGES_BLINK', 24);
 define('TYPES_MESSAGES_OPEN', 25);
 define('TYPES_MESSAGES_CHECK', 26);
-
+//  实体 战士
 define('TYPES_ENTITIES_WARRIOR', 1);
 
 define('TYPES_ENTITIES_RAT', 2);
@@ -65,11 +75,15 @@ define('TYPES_ENTITIES_REDARMOR', 25);
 define('TYPES_ENTITIES_GOLDENARMOR', 26);
 
         // Objects
-    
+// 瓶子
 define('TYPES_ENTITIES_FLASK', 35);
+// 汉堡
 define('TYPES_ENTITIES_BURGER', 36);
+// 护甲
 define('TYPES_ENTITIES_CHEST', 37);
+// 火 药剂
 define('TYPES_ENTITIES_FIREPOTION', 38);
+// 蛋糕
 define('TYPES_ENTITIES_CAKE', 39);
 
         // NPCs

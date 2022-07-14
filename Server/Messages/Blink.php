@@ -13,6 +13,9 @@
  */
 namespace Server\Messages;
 
+/**
+ * 眨眼，刷新？
+ */
 class Blink
 {
     public $entity = null;

@@ -13,6 +13,9 @@
  */
 namespace Server\Messages;
 
+/**
+ * 销毁
+ */
 class Destroy
 {
     public $item = null;

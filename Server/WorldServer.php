@@ -17,12 +17,16 @@ use \Workerman\Timer;
 
 require_once __DIR__ . '/Constants.php';
 
+
 class WorldServer 
 {
     public $id;
     public $maxPlayers;
     public $server;
     public $ups;
+    /**
+     * @var Map
+     */
     public $map;
     
     public $entities = array();
@@ -298,7 +302,12 @@ class WorldServer
     public function onRegenTick($callback) {
         $this->regenCallback = $callback;
     }
-    
+
+    /**
+     * 推送实体列表
+     * @param $player
+     * @return void
+     */
     public function pushRelevantEntityListTo($player) {
         if($player && isset($this->groups[$player->group])) {
             $entities = array_keys($this->groups[$player->group]->entities);

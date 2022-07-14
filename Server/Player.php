@@ -14,6 +14,10 @@
 namespace Server;
 use \Workerman\Timer;
 
+/**
+ *
+ * @property-read WorldServer $server
+ */
 class Player extends Character
 {
     public $hasEnteredGame = false;
